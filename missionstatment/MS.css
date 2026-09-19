@@ -1,0 +1,91 @@
+
+
+body {
+    margin: 0 auto;
+    padding: 70px 15%;
+    border: 1px solid #bdbdbd;
+    min-height: calc(100vh - 180px);
+    font-family: Georgia, "Times New Roman", serif;
+    color: #111;
+    width: 650px;
+    
+}
+
+/* MISSION STATEMENT */
+#toplogo {
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin: 35px 0 25px 0;
+}
+
+/* BRIGHAM YOUNG UNIVERSITY-IDAHO */
+h2 {
+    text-align: center;
+    color: #2878bd;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin: 0 auto 10px auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dddddd;
+    max-width: 790px;
+}
+
+/* FIRST PARAGRAPH */
+#mission-para {
+    max-width: 790px;
+    margin: 65px auto 30px auto;
+    font-size: 21px;
+    line-height: 1.65;
+}
+
+/* "The university does this by:" */
+#non-para {
+    max-width: 790px;
+    margin: 30px auto 25px auto;
+    font-size: 21px;
+    font-style: italic;
+}
+
+/* NUMBERED LIST */
+#mission-list {
+    max-width: 790px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+#mission-list ol {
+    padding-left: 55px;
+}
+
+#mission-list li {
+    padding-left: 5px;
+    margin-bottom: 25px;
+}
+
+/* BYU */
+#byu {
+    text-align: center;
+    color: #2878bd;
+    font-size: 65px;
+    line-height: 0.7;
+      margin: 0 auto;
+      margin-top: 65px;
+    border-bottom: 1px solid #2878bd;
+    width: 150px;
+    padding-bottom: 10px;
+    
+}
+
+/* IDAHO */
+#idaho {
+    text-align: center;
+    color: #2878bd;
+    font-size: 41px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 15px 0 0 0;
+
+}
