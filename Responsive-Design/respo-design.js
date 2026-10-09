@@ -9,10 +9,10 @@
 
 */
 
-function displayWelcom(){
-    const headerEL = document.querySelecter("header");
-    const dayIndex = new Date().getDay;
-    const days = ["sunday", "Monday", "Tuesday"];
+function displayWelcome(){
+    const headerEL = document.querySelector("header");
+    const dayIndex = new Date().getDay();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const message = `Happy ${days[dayIndex]}`;
     const messageEl = document.createElement("p");
     messageEl.textContent = message;
@@ -35,9 +35,14 @@ function addIndex() {
 }
 
 function toggleMenu() {
-    
+    navEl.classList.toggle("hide")
+    menuButton.classList.toggle("change")
 }
-document.querySelector(".menu-btn").addEventListener("click", toggleMenu)
-
 addIndex()
-displayWelcom()
+displayWelcome()
+
+
+const menuButton = document.querySelector(".menu-btn");
+const navEl = document.querySelector(".main-nav")
+
+menuButton.addEventListener("click", toggleMenu);
