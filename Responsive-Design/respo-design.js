@@ -25,7 +25,6 @@ function renderNumber(element, index) {
     number.textContent = index + 1;
     element.prepend(number);
         
-    
 }
 
 //identifyies the element/scripture and stores it in a variable
