@@ -1,4 +1,41 @@
+// PONDER ASSIGNMENT
+function convert(grade) {
+    switch (grade){
+        case 'A':
+            points = 4;
+            break;
+        case 'B':
+            points = 3;
+            break;
+        case 'C':
+            points = 2;
+            break;
+        case 'D':
+            points = 1;
+            break;
+        case 'F':
+            points = 0;
+            break;
+        default:
+            alert('not a valid grade');
+    }
+    return points;
+}
 
+const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+
+
+const students = [
+    {last: 'Andrus', first: 'Aaron'},
+    {last: 'Masa', first:'Manny'},
+    {last: 'Tanda', first: 'Tamanda'}
+];
+          
+          
+
+
+
+// IN CLASS
 // Activity 1
 //  arrays.js
 const steps = ["one", "two", "three"];
@@ -22,13 +59,11 @@ function convertToPoints(grade) {
         case "C":
             return 2;
         default:
-            return 0;
+            return 'Not a valid';
     }
 }
 const gpaPoints = grades.map(convertToPoints);
 console.log(gpaPoints);
-
-// Activity 3 
 
 
 //Activity 4
@@ -44,4 +79,3 @@ function testLength(item) {
 
 const shortFruit = fruit.filter(testLength)
 
-// Activity 5
