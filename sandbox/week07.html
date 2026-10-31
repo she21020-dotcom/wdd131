@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="week07.js"></script>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <form action="" method="get" id="myForm">
+        <p>
+            <label for="fullName">Name</label>
+            <input type="text" 
+            name="fullName" 
+            id="fullName" 
+            placeholder="Enter your full Name"
+            required
+            
+            />
+        </p>
+        <p>
+            <label for="fullName">DOB</label>
+            <input type="date" 
+            name="dob" 
+            id="dob" 
+            placeholder="yyyy-mm-dd"
+            />
+        </p>
+        <p>
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+                <option value="">Choose State</option>
+                <option value="">Alaska</option>
+                <option value="">Idaho</option>
+            </select>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" 
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+            value="asd@asd"
+            />
+        </p>
+
+        <button type="submit">Submit</button> <button type="reset">Cancel</button>
+    </form>
+    
+</body>
+</html>
