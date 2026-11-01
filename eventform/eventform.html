@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eventform.css">
+    <script src="eventform.js" defer></script>
+    
+</head>
+<body>
+    <main>
+        
+        <h1>Event Ticket</h1>
+        
+        <form id="event-ticket-form">
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required>
+            </div>
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required>
+            </div>
+            <div class="field" id="email-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div class="field">
+                <label for="type">Type</label>
+                <select
+                id="type"
+                name="type"
+                aria-controls="studentIdContainer accessCodeContainer"
+                required
+                >
+                <option value="">Choose one</option>
+                <option value="student">Student</option>
+                <option value="guest">Guest</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="eventDate">Event Date</label>
+            <input id="eventDate" name="eventDate" type="date" required>
+        </div>
+        
+        <div id="studentIdContainer" class="field full" hidden>
+            <label for="stu-id">Student ID</label>
+            <input id="stu-id" name="stu-id" type="text" />
+        </div>
+
+        <div id="accessCodeContainer" class="field full" hidden>
+            <label for="access">Access Code</label>
+            <input id="access" name="access" type="text" />
+        </div>
+
+        <button class="full" type="submit">Create Ticket</button>
+        
+    </form>
+    
+</main>
+</body>
+</html>
