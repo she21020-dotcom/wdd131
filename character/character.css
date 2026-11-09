@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 16px;
+    background: #f1f3f5;
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #171717;
+    box-shadow: 0 5px 16px rgb(0 0 0 / 35%);
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+h2 {
+    margin: 0;
+    padding: 14px 32px;
+    background-color: #6f858c;
+    color: #fff;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.characterStats {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 5px;
+    row-gap: 3px;
+    padding: 17px 32px 10px;
+    background: #1c1c1c;
+}
+
+.characterStats h3,
+.characterStats p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.characterStats h3 {
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px 0 18px;
+    background: #1c1c1c;
+}
+
+.buttons button {
+    width: 74px;
+    min-height: 27px;
+    padding: 4px 6px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #6f858c;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #46585c;
+}
+
+/* .buttons button:active {
+    background-color: #52656a;
+} */
+
+.buttons button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
