@@ -82,10 +82,6 @@ h2 {
     background-color: #46585c;
 }
 
-/* .buttons button:active {
-    background-color: #52656a;
-} */
-
 .buttons button:focus-visible {
     outline: 2px solid #fff;
     outline-offset: 3px;
