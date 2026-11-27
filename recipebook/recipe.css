@@ -77,6 +77,11 @@ form button img {
   border-radius: 7px;
 }
 
+#recipe-results {
+  display: grid;
+  gap: 16px;
+}
+
 .recipe-content > img {
   display: block;
   width: 100%;

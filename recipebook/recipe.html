@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipe.css">
+    <script src="recipe.js" defer></script>
 
 
 <!-- Open Graph (Facebook, LinkedIn, etc.) -->
@@ -48,23 +49,25 @@
       </button>
     </form>
 
-    <article class="recipe-content">
-      <img src="images/apple-crisp.jpg" alt="Apple crisp served with vanilla ice cream">
-      <section>
-        <p class="food-type"><strong>Dessert</strong></p>
-        <h2 id="apple-crisp">Apple Crisp</h2>
-        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
-        <p class="recipe-description">
-          This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
-        </p>
-      </section>
-    </article>
+    <div id="recipe-results" aria-live="polite">
+      <article class="recipe-content">
+        <img src="images/apple-crisp.jpg" alt="Apple crisp served with vanilla ice cream">
+        <section>
+          <p class="food-type"><strong>Dessert</strong></p>
+          <h2 id="apple-crisp">Apple Crisp</h2>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <p class="recipe-description">
+            This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
+          </p>
+        </section>
+      </article>
+    </div>
   </main>
 
   <footer>
